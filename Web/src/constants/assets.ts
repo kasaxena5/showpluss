@@ -2,6 +2,21 @@ export const ASSETS = {
   brand: {
     symbol: "/assets/brand/show-pluss-symbol.svg",
   },
+  countries: {
+    india: "/assets/countries/india.svg",
+    china: "/assets/countries/china.svg",
+    japan: "/assets/countries/japan.svg",
+    australia: "/assets/countries/australia.svg",
+    singapore: "/assets/countries/singapore.svg",
+    vietnam: "/assets/countries/vietnam.svg",
+    sriLanka: "/assets/countries/sri-lanka.svg",
+    middleEast: "/assets/countries/middle-east.svg",
+    turkey: "/assets/countries/turkey.svg",
+    cisRegion: "/assets/countries/cis-region.svg",
+    africa: "/assets/countries/africa.svg",
+    europe: "/assets/countries/europe.svg",
+    usa: "/assets/countries/usa.svg",
+  },
   icons: {
     chevronLeft: "/assets/icons/chevron-left.svg",
     chevronRight: "/assets/icons/chevron-right.svg",

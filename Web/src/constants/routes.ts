@@ -1,4 +1,5 @@
 export const SECTION_IDS = {
+  overview: "overview",
   about: "about",
   services: "services",
   designProjects: "design-projects",
