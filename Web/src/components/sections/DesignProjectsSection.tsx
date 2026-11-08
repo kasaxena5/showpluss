@@ -1,3 +1,6 @@
+import FeatureCard from "@/components/cards/FeatureCard";
+import ProjectCard from "@/components/cards/ProjectCard";
+import { ASSETS } from "@/constants/assets";
 import { SECTION_IDS } from "@/constants/routes";
 
 export default function DesignProjectsSection() {
@@ -16,6 +19,40 @@ export default function DesignProjectsSection() {
         production and management services to maximise your effectiveness on the
         fairground.
       </p>
+      <ul aria-label="Capabilities">
+        <FeatureCard text="Latest CAD technology, quality graphics and printing" />
+        <FeatureCard text="Skilled, experienced and creative designers" />
+        <FeatureCard text="Quality furniture rentals, Timely construction and delivery" />
+        <FeatureCard text="Advanced administration and logistics system" />
+        <FeatureCard text="Highly skilled workforce" />
+        <FeatureCard text="Excellent design development" />
+      </ul>
+      <ul aria-label="Projects">
+        <ProjectCard
+          caption="Exhibition stand"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+        <ProjectCard
+          caption="Custom booth"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+        <ProjectCard
+          caption="Brand-led design"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+        <ProjectCard
+          caption="Trade fair build"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+        <ProjectCard
+          caption="Stand graphics"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+        <ProjectCard
+          caption="Large-format stand"
+          image={ASSETS.photographs.projectExhibitionStand}
+        />
+      </ul>
     </section>
   );
 }
