@@ -1,0 +1,50 @@
+export const ASSETS = {
+  brand: {
+    symbol: "/assets/brand/show-pluss-symbol.svg",
+  },
+  countries: {
+    india: "/assets/countries/india.svg",
+    china: "/assets/countries/china.svg",
+    japan: "/assets/countries/japan.svg",
+    australia: "/assets/countries/australia.svg",
+    singapore: "/assets/countries/singapore.svg",
+    vietnam: "/assets/countries/vietnam.svg",
+    sriLanka: "/assets/countries/sri-lanka.svg",
+    middleEast: "/assets/countries/middle-east.svg",
+    turkey: "/assets/countries/turkey.svg",
+    cisRegion: "/assets/countries/cis-region.svg",
+    africa: "/assets/countries/africa.svg",
+    europe: "/assets/countries/europe.svg",
+    usa: "/assets/countries/usa.svg",
+  },
+  icons: {
+    chevronLeft: "/assets/icons/chevron-left.svg",
+    chevronRight: "/assets/icons/chevron-right.svg",
+  },
+  illustrations: {
+    exhibitionServices: "/assets/illustrations/sheets/exhibition-services.png",
+    travelServices: "/assets/illustrations/sheets/travel-services.png",
+    travel: {
+      hotelStay: "/assets/illustrations/travel/hotel-stay.png",
+      ticketing: "/assets/illustrations/travel/ticketing.png",
+      visaAssistance: "/assets/illustrations/travel/visa-assistance.png",
+      sightseeingTours: "/assets/illustrations/travel/sightseeing-tours.png",
+    },
+    services: {
+      internationalExhibitions: "/assets/illustrations/services/international-exhibitions.png",
+      exhibitorDelegations: "/assets/illustrations/services/exhibitor-delegations.png",
+      travelDelegations: "/assets/illustrations/services/travel-delegations.png",
+      designConstruction: "/assets/illustrations/services/design-construction.png",
+      travelAssistance: "/assets/illustrations/services/travel-assistance.png",
+      tradeFairLogistics: "/assets/illustrations/services/trade-fair-logistics.png",
+    },
+  },
+  photographs: {
+    heroChinaPavilion: "/assets/photographs/hero-china-pavilion.jpg",
+    heroExhibitionStand: "/assets/photographs/hero-exhibition-stand.jpg",
+    heroIndiaPavilion: "/assets/photographs/hero-india-pavilion.jpg",
+    projectExhibitionStand: "/assets/photographs/project-exhibition-stand.png",
+    showcaseIndiaPavilion: "/assets/photographs/showcase-india-pavilion.jpg",
+    showcaseTradeFair: "/assets/photographs/showcase-trade-fair.jpg",
+  },
+} as const;
