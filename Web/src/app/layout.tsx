@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Footer from "@/components/layout/Footer";
+import Nav from "@/components/layout/Nav";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,7 +10,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }
