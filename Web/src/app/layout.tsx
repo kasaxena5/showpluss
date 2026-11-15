@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Footer from "@/components/layout/Footer";
 import Nav from "@/components/layout/Nav";
 import { ASSETS } from "@/constants/assets";
+import "@/styles/fonts.css";
+import "@/styles/tokens.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Show pluss",
