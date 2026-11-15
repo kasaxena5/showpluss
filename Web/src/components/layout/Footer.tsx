@@ -3,36 +3,38 @@ import Link from "next/link";
 import { ASSETS } from "@/constants/assets";
 import { EXTERNAL_LINKS } from "@/constants/external-links";
 import { ROUTES } from "@/constants/routes";
+import "@/styles/footer.css";
 
 export default function Footer() {
   return (
-    <footer>
-      <Link href={ROUTES.home}>
+    <footer className="footer">
+      <Link href={ROUTES.home} className="footer-brand">
         <Image
+          className="footer-logo"
           src={ASSETS.brand.symbol}
           alt=""
-          width={50}
-          height={57}
+          width={60}
+          height={69}
         />
         <span>Show Pluss Expo</span>
       </Link>
-      <nav aria-label="Social media">
-        <ul>
+      <nav className="footer-socials" aria-label="Social media">
+        <ul className="footer-links">
           <li>
-            <a href={EXTERNAL_LINKS.facebook}>Facebook</a>
+            <a href={EXTERNAL_LINKS.facebook} className="footer-link">Facebook</a>
           </li>
           <li>
-            <a href={EXTERNAL_LINKS.twitter}>Twitter</a>
+            <a href={EXTERNAL_LINKS.twitter} className="footer-link">Twitter</a>
           </li>
           <li>
-            <a href={EXTERNAL_LINKS.linkedIn}>LinkedIn</a>
+            <a href={EXTERNAL_LINKS.linkedIn} className="footer-link">LinkedIn</a>
           </li>
           <li>
-            <a href={EXTERNAL_LINKS.instagram}>Instagram</a>
+            <a href={EXTERNAL_LINKS.instagram} className="footer-link">Instagram</a>
           </li>
         </ul>
       </nav>
-      <small>&copy; Show Pluss Expos. All rights reserved.</small>
+      <small className="footer-copyright">&copy; Show Pluss Expos. All rights reserved.</small>
     </footer>
   );
 }
