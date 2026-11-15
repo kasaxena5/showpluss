@@ -19,7 +19,7 @@
   --gradient-heading-worldwide: linear-gradient(7.436808447681443deg, #85c17e 12.447%, #1c523a 74.946%);
   --gradient-heading-section: linear-gradient(2.4065484702308026deg, #85c17e 12.447%, #1c523a 74.946%);
   --gradient-heading-travel: linear-gradient(7.799642341201519deg, #85c17e 12.447%, #1c523a 74.946%);
-  --gradient-panel-services: linear-gradient(-28.740042978231045deg, rgb(241 208 88 / 0) 15.822%, #d9b250 109.39%);
+  --gradient-panel-services: linear-gradient(155deg, #efefbf, var(--color-card));
   --gradient-panel-travel: linear-gradient(155deg, #efefbf, var(--color-card));
   --gradient-hero-overlay: linear-gradient(0.9050685829324863deg, #417952 3.4567%, rgb(31 92 69 / 0) 36.857%), linear-gradient(0.43232868934977375deg, rgb(20 64 47 / 0) 122.5%, #000000 128.66%);
   --gradient-project-overlay: linear-gradient(to top, #0b4f22, rgb(102 102 102 / 0));
