@@ -4,8 +4,9 @@ type FeatureCardProps = {
 
 export default function FeatureCard({ text }: FeatureCardProps) {
   return (
-    <li>
-      <span aria-hidden="true">+</span> {text}
+    <li className="feature-card">
+      <span className="feature-card-icon" aria-hidden="true">+</span>
+      <span>{text}</span>
     </li>
   );
 }
