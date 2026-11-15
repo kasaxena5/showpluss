@@ -7,9 +7,9 @@ type TravelServiceCardProps = {
 
 export default function TravelServiceCard({ title, image }: TravelServiceCardProps) {
   return (
-    <li>
-      <Image src={image} alt="" width={30} height={30} />
-      <h3>{title}</h3>
+    <li className="travel-card">
+      <Image className="travel-card-image" src={image} alt="" width={100} height={80} />
+      <h3 className="travel-card-title">{title}</h3>
     </li>
   );
 }
