@@ -31,7 +31,7 @@ export default function Nav() {
           <Link href={ROUTES.sections.travel} className="navbar-link">Travel</Link>
         </li>
         <li>
-          <Link href={ROUTES.sections.contact} className="navbar-cta">Get in touch</Link>
+          <Link href={ROUTES.sections.contact} className="navbar-link">Get in touch</Link>
         </li>
       </ul>
     </nav>
