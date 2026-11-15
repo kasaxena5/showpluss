@@ -3,5 +3,5 @@ type CategoryChipProps = {
 };
 
 export default function CategoryChip({ label }: CategoryChipProps) {
-  return <li>{label}</li>;
+  return <li className="category-chip">{label}</li>;
 }

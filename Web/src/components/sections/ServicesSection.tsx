@@ -3,45 +3,50 @@ import CategoryChip from "@/components/chips/CategoryChip";
 import CountryFlag from "@/components/flags/CountryFlag";
 import { ASSETS } from "@/constants/assets";
 import { SECTION_IDS } from "@/constants/routes";
+import "@/styles/about-services.css";
 
 export default function ServicesSection() {
   return (
-    <section id={SECTION_IDS.services}>
-      <h2>Our Services</h2>
-      <ul>
-        <ServiceCard
-          title="International exhibitions"
-          description="Representation of international exhibitions worldwide."
-          image={ASSETS.illustrations.services.internationalExhibitions}
-        />
-        <ServiceCard
-          title="Assisting Indian exhibitors and visitor delegations"
-          description="To trade fairs overseas, and vice versa."
-          image={ASSETS.illustrations.services.exhibitorDelegations}
-        />
-        <ServiceCard
-          title="Travel assistance"
-          description="Hotels, tickets, visas and tours for business travellers, handled for you."
-          image={ASSETS.illustrations.services.travelAssistance}
-        />
-        <ServiceCard
-          title="Trade fair logistics"
-          description="Shipping and handling for your stand and products, so everything arrives on time."
-          image={ASSETS.illustrations.services.tradeFairLogistics}
-        />
-        <ServiceCard
-          title="Design & construction"
-          description="Exhibition space designed and built in India and overseas."
-          image={ASSETS.illustrations.services.designConstruction}
-        />
-        <ServiceCard
-          title="Design & construction"
-          description="Exhibition space designed and built in India and overseas."
-          image={ASSETS.illustrations.services.travelDelegations}
-        />
-      </ul>
-      <h3>Product segments we cater to</h3>
-      <ul aria-label="Product categories">
+    <section id={SECTION_IDS.services} className="services" aria-labelledby="services-heading">
+      <div className="about-services-content">
+        <h2 id="services-heading" className="about-services-heading services-heading">
+          Our <span className="services-heading-highlight">Services</span>
+        </h2>
+        <ul className="services-grid">
+          <ServiceCard
+            title="International exhibitions"
+            description="Representation of international exhibitions worldwide."
+            image={ASSETS.illustrations.services.internationalExhibitions}
+          />
+          <ServiceCard
+            title="Assisting Indian exhibitors and visitor delegations"
+            description="To trade fairs overseas, and vice versa."
+            image={ASSETS.illustrations.services.exhibitorDelegations}
+          />
+          <ServiceCard
+            title="Travel assistance"
+            description="Hotels, tickets, visas and tours for business travellers, handled for you."
+            image={ASSETS.illustrations.services.travelAssistance}
+          />
+          <ServiceCard
+            title="Trade fair logistics"
+            description="Shipping and handling for your stand and products, so everything arrives on time."
+            image={ASSETS.illustrations.services.tradeFairLogistics}
+          />
+          <ServiceCard
+            title="Design & construction"
+            description="Exhibition space designed and built in India and overseas."
+            image={ASSETS.illustrations.services.designConstruction}
+          />
+          <ServiceCard
+            title="Design & construction"
+            description="Exhibition space designed and built in India and overseas."
+            image={ASSETS.illustrations.services.travelDelegations}
+          />
+        </ul>
+        <h3 className="services-subheading">Product segments we cater to</h3>
+      </div>
+      <ul className="services-categories" aria-label="Product categories">
         <CategoryChip label="Plastics, Printing & Packaging" />
         <CategoryChip label="Building Material & Construction Equipments" />
         <CategoryChip label="Engineering" />
@@ -60,14 +65,21 @@ export default function ServicesSection() {
         <CategoryChip label="Gifts & Handicrafts" />
         <CategoryChip label="Food Ingredients" />
       </ul>
-      <h3>Exhibition design and management worldwide</h3>
-      <p>
-        We keep professional relationships with a large number of international
-        and domestic trade associations, chambers of commerce and business
-        councils. From the first event brief to full on-site support, our team
-        gives you guidance, advice and a complete, professional service.
-      </p>
-      <ul aria-label="Countries and regions">
+      <div className="about-services-content services-worldwide">
+        <h3 className="about-services-heading">
+          Exhibition design and management{" "}
+          <span className="services-worldwide-highlight">worldwide</span>
+        </h3>
+        <div className="about-services-description">
+          <p>
+            We keep professional relationships with a large number of international
+            and domestic trade associations, chambers of commerce and business
+            councils. From the first event brief to full on-site support, our team
+            gives you guidance, advice and a complete, professional service.
+          </p>
+        </div>
+      </div>
+      <ul className="services-countries" aria-label="Countries and regions">
         <CountryFlag label="India" image={ASSETS.countries.india} />
         <CountryFlag label="China" image={ASSETS.countries.china} />
         <CountryFlag label="Japan" image={ASSETS.countries.japan} />

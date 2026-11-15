@@ -8,10 +8,12 @@ type ServiceCardProps = {
 
 export default function ServiceCard({ title, description, image }: ServiceCardProps) {
   return (
-    <li>
-      <Image src={image} alt="" width={30} height={30} />
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <li className="service-card">
+      <Image className="service-card-image" src={image} alt="" width={144} height={144} />
+      <div className="service-card-content">
+        <h3 className="service-card-title">{title}</h3>
+        <p className="service-card-description">{description}</p>
+      </div>
     </li>
   );
 }
